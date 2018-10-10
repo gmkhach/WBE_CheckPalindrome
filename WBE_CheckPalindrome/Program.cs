@@ -21,7 +21,7 @@ namespace WBE_CheckAnagram
                 {
                     Console.Write("\nInput two string separated by a comma\n\n>>> ");
                     string[] input = Console.ReadLine().Trim().Split(',');
-                    Console.WriteLine("\n" + (CheckAnagram(input[0].Trim(), input[1].Trim()) ? "the strings are anagrams of each other" : "the strings are not anagrams of each other"));
+                    Console.WriteLine("\nThe strings are " + (CheckAnagram(input[0].Trim(), input[1].Trim()) ? "" : "not ") + "palindromes of each other");
                 }
                 catch (Exception ex)
                 {
